@@ -1,0 +1,3 @@
+vhdtdtfi -lib work Alu.vhd -prj RegisterFile -o Alu.spl -module Alu -template C:/Xilinx/14.5/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 Alu.spl C:/Xilinx/RegisterFile/Alu.sym 
+vhdtdtfi -prj RegisterFile -o C:/Xilinx/RegisterFile/Alu.tfi -module Alu -template C:/Xilinx/14.5/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work Alu.vhd 

@@ -1,0 +1,7 @@
+vhdl work "mux_package.vhd"
+vhdl work "mux.vhd"
+vhdl work "flopr_package.vhd"
+vhdl work "flopr.vhd"
+vhdl work "decoder_package.vhd"
+vhdl work "decoder.vhd"
+vhdl work "RegisterFile.vhd"

@@ -1,0 +1,5 @@
+vhdl work "MainDecoder_Package.vhd"
+vhdl work "MainDecoder.vhd"
+vhdl work "Aludecoder_Package.vhd"
+vhdl work "Aludecoder.vhd"
+vhdl work "Control.vhd"

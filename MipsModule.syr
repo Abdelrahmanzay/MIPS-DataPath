@@ -1,0 +1,738 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.09 secs
+ 
+--> Reading design: MipsModule.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MipsModule.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MipsModule"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : MipsModule
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\mux_package.vhd" into library work
+Parsing package <mux_package>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\mux.vhd" into library work
+Parsing entity <mux>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\flopr_package.vhd" into library work
+Parsing package <flopr_package>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\flopr.vhd" into library work
+Parsing entity <flopr>.
+Parsing architecture <Behavioral> of entity <flopr>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\decoder_package.vhd" into library work
+Parsing package <decoder_package>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\decoder.vhd" into library work
+Parsing entity <decoder>.
+Parsing architecture <Behavioral> of entity <decoder>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\sl2.vhd" into library work
+Parsing package <sl2>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\Signextender_Package.vhd" into library work
+Parsing package <Signextender_Package>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\Signextender.vhd" into library work
+Parsing entity <Signextender>.
+Parsing architecture <Behavioral> of entity <signextender>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\shiftleft.vhd" into library work
+Parsing entity <shiftleft>.
+Parsing architecture <Behavioral> of entity <shiftleft>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\RegisterFile_Package.vhd" into library work
+Parsing package <RegisterFile_Package>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\RegisterFile.vhd" into library work
+Parsing entity <RegisterFile>.
+Parsing architecture <Behavioral> of entity <registerfile>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\mux2x1.vhd" into library work
+Parsing entity <mux2x1>.
+Parsing architecture <Behavioral> of entity <mux2x1>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\mux2x.vhd" into library work
+Parsing package <mux2x>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\MainDecoder_Package.vhd" into library work
+Parsing package <MainDecoder_Package>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\MainDecoder.vhd" into library work
+Parsing entity <MainDecoder>.
+Parsing architecture <Behavioral> of entity <maindecoder>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\Alu_Package.vhd" into library work
+Parsing package <Alu_Package>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\Aludecoder_Package.vhd" into library work
+Parsing package <Aludecoder_Package>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\Aludecoder.vhd" into library work
+Parsing entity <Aludecoder>.
+Parsing architecture <Behavioral> of entity <aludecoder>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\Alu.vhd" into library work
+Parsing entity <Alu>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\adderpackage.vhd" into library work
+Parsing package <adderpackage>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\adder.vhd" into library work
+Parsing entity <adder>.
+Parsing architecture <Behavioral> of entity <adder>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\DataPath_Package.vhd" into library work
+Parsing package <DataPath_Package>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\DataPath.vhd" into library work
+Parsing entity <DataPath>.
+Parsing architecture <Behavioral> of entity <datapath>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\Control_Package.vhd" into library work
+Parsing package <Control_Package>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\Control.vhd" into library work
+Parsing entity <Control>.
+Parsing architecture <Behavioral> of entity <control>.
+Parsing VHDL file "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\MipsModule.vhd" into library work
+Parsing entity <MipsModule>.
+Parsing architecture <Behavioral> of entity <mipsmodule>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <MipsModule> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Control> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Aludecoder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MainDecoder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DataPath> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RegisterFile> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <decoder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <flopr> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <mux> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Alu> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <adder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Signextender> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <shiftleft> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <mux2x1> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <mux2x1> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <MipsModule>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\MipsModule.vhd".
+    Summary:
+	no macro.
+Unit <MipsModule> synthesized.
+
+Synthesizing Unit <Control>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\Control.vhd".
+    Summary:
+	no macro.
+Unit <Control> synthesized.
+
+Synthesizing Unit <Aludecoder>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\Aludecoder.vhd".
+    Summary:
+	no macro.
+Unit <Aludecoder> synthesized.
+
+Synthesizing Unit <MainDecoder>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\MainDecoder.vhd".
+    Summary:
+	no macro.
+Unit <MainDecoder> synthesized.
+
+Synthesizing Unit <DataPath>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\DataPath.vhd".
+WARNING:Xst:647 - Input <instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <DataPath> synthesized.
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\RegisterFile.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <RegisterFile> synthesized.
+
+Synthesizing Unit <decoder>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\decoder.vhd".
+    Summary:
+	no macro.
+Unit <decoder> synthesized.
+
+Synthesizing Unit <flopr>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\flopr.vhd".
+    Found 32-bit register for signal <q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <flopr> synthesized.
+
+Synthesizing Unit <mux>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\mux.vhd".
+    Found 32-bit 32-to-1 multiplexer for signal <output> created at line 66.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux> synthesized.
+
+Synthesizing Unit <Alu>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\Alu.vhd".
+    Found 32-bit adder for signal <n0043> created at line 46.
+    Found 32-bit adder for signal <S> created at line 46.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  11 Multiplexer(s).
+Unit <Alu> synthesized.
+
+Synthesizing Unit <adder>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\adder.vhd".
+    Found 32-bit adder for signal <S> created at line 43.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adder> synthesized.
+
+Synthesizing Unit <Signextender>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\Signextender.vhd".
+    Summary:
+	no macro.
+Unit <Signextender> synthesized.
+
+Synthesizing Unit <shiftleft>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\shiftleft.vhd".
+WARNING:Xst:647 - Input <input<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <shiftleft> synthesized.
+
+Synthesizing Unit <mux2x1_1>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\mux2x1.vhd".
+        noofbits = 32
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux2x1_1> synthesized.
+
+Synthesizing Unit <mux2x1_2>.
+    Related source file is "C:\Users\20102\Downloads\ProjectPhase1\ProjectPhase1\mux2x1.vhd".
+        noofbits = 5
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux2x1_2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 4
+# Registers                                            : 33
+ 32-bit register                                       : 33
+# Multiplexers                                         : 21
+ 32-bit 2-to-1 multiplexer                             : 17
+ 32-bit 32-to-1 multiplexer                            : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit adder carry in                                 : 1
+# Registers                                            : 1056
+ Flip-Flops                                            : 1056
+# Multiplexers                                         : 21
+ 32-bit 2-to-1 multiplexer                             : 17
+ 32-bit 32-to-1 multiplexer                            : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <flopr> ...
+
+Optimizing unit <MipsModule> ...
+
+Optimizing unit <DataPath> ...
+
+Optimizing unit <Alu> ...
+
+Optimizing unit <RegisterFile> ...
+WARNING:Xst:1710 - FF/Latch <datapath1/pcreg/q_1> (without init value) has a constant value of 0 in block <MipsModule>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <datapath1/pcreg/q_0> (without init value) has a constant value of 0 in block <MipsModule>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MipsModule, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1054
+ Flip-Flops                                            : 1054
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : MipsModule.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1170
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 29
+#      LUT2                        : 30
+#      LUT3                        : 4
+#      LUT4                        : 9
+#      LUT5                        : 39
+#      LUT6                        : 811
+#      MUXCY                       : 89
+#      MUXF7                       : 64
+#      VCC                         : 1
+#      XORCY                       : 92
+# FlipFlops/Latches                : 1054
+#      FDC                         : 30
+#      FDCE                        : 1024
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 162
+#      IBUF                        : 65
+#      OBUF                        : 97
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1054  out of  126800     0%  
+ Number of Slice LUTs:                  923  out of  63400     1%  
+    Number used as Logic:               923  out of  63400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1892
+   Number with an unused Flip Flop:     838  out of   1892    44%  
+   Number with an unused LUT:           969  out of   1892    51%  
+   Number of fully used LUT-FF pairs:    85  out of   1892     4%  
+   Number of unique control sets:        33
+
+IO Utilization: 
+ Number of IOs:                         163
+ Number of bonded IOBs:                 163  out of    210    77%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    128     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1054  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.769ns (Maximum Frequency: 173.347MHz)
+   Minimum input arrival time before clock: 5.754ns
+   Maximum output required time after clock: 4.536ns
+   Maximum combinational path delay: 4.521ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.769ns (frequency: 173.347MHz)
+  Total number of paths / destination ports: 3419424 / 1054
+-------------------------------------------------------------------------
+Delay:               5.769ns (Levels of Logic = 37)
+  Source:            datapath1/reg/f27/q_0 (FF)
+  Destination:       datapath1/pcreg/q_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: datapath1/reg/f27/q_0 to datapath1/pcreg/q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.361   0.561  datapath1/reg/f27/q_0 (datapath1/reg/f27/q_0)
+     LUT6:I2->O            1   0.097   0.556  datapath1/reg/mux1/Mmux_output_81 (datapath1/reg/mux1/Mmux_output_81)
+     LUT6:I2->O            1   0.097   0.000  datapath1/reg/mux1/Mmux_output_3 (datapath1/reg/mux1/Mmux_output_3)
+     MUXF7:I1->O           2   0.279   0.383  datapath1/reg/mux1/Mmux_output_2_f7 (datapath1/out1<0>)
+     LUT6:I4->O            1   0.097   0.000  datapath1/alu1/Madd_S_Madd_lut<0> (datapath1/alu1/Madd_S_Madd_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  datapath1/alu1/Madd_S_Madd_cy<0> (datapath1/alu1/Madd_S_Madd_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<1> (datapath1/alu1/Madd_S_Madd_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<2> (datapath1/alu1/Madd_S_Madd_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<3> (datapath1/alu1/Madd_S_Madd_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<4> (datapath1/alu1/Madd_S_Madd_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<5> (datapath1/alu1/Madd_S_Madd_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<6> (datapath1/alu1/Madd_S_Madd_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<7> (datapath1/alu1/Madd_S_Madd_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<8> (datapath1/alu1/Madd_S_Madd_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<9> (datapath1/alu1/Madd_S_Madd_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<10> (datapath1/alu1/Madd_S_Madd_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<11> (datapath1/alu1/Madd_S_Madd_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<12> (datapath1/alu1/Madd_S_Madd_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<13> (datapath1/alu1/Madd_S_Madd_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<14> (datapath1/alu1/Madd_S_Madd_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<15> (datapath1/alu1/Madd_S_Madd_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<16> (datapath1/alu1/Madd_S_Madd_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<17> (datapath1/alu1/Madd_S_Madd_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<18> (datapath1/alu1/Madd_S_Madd_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<19> (datapath1/alu1/Madd_S_Madd_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<20> (datapath1/alu1/Madd_S_Madd_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<21> (datapath1/alu1/Madd_S_Madd_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<22> (datapath1/alu1/Madd_S_Madd_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<23> (datapath1/alu1/Madd_S_Madd_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<24> (datapath1/alu1/Madd_S_Madd_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<25> (datapath1/alu1/Madd_S_Madd_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<26> (datapath1/alu1/Madd_S_Madd_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<27> (datapath1/alu1/Madd_S_Madd_cy<27>)
+     XORCY:CI->O           1   0.370   0.295  datapath1/alu1/Madd_S_Madd_xor<28> (datapath1/alu1/S<28>)
+     LUT6:I5->O            3   0.097   0.389  datapath1/alu1/Mmux_temp1211 (aluout_28_OBUF)
+     LUT5:I3->O            1   0.097   0.511  controller/pcsrc2 (controller/pcsrc1)
+     LUT6:I3->O           30   0.097   0.402  controller/pcsrc9 (pcsrc)
+     LUT4:I3->O            1   0.097   0.000  datapath1/pcnext<28>1 (datapath1/pcnext<28>)
+     FDC:D                     0.008          datapath1/pcreg/q_28
+    ----------------------------------------
+    Total                      5.769ns (2.671ns logic, 3.098ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 3238121 / 3132
+-------------------------------------------------------------------------
+Offset:              5.754ns (Levels of Logic = 37)
+  Source:            instr<26> (PAD)
+  Destination:       datapath1/pcreg/q_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: instr<26> to datapath1/pcreg/q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            43   0.001   0.665  instr_26_IBUF (instr_26_IBUF)
+     LUT4:I0->O           36   0.097   0.791  controller/maindecoder1/controls<1>21 (controller/maindecoder1/controls<1>2)
+     LUT5:I0->O           70   0.097   0.669  controller/aludecoder1/alucontrol<2>1 (alucontrol<2>)
+     LUT6:I2->O            1   0.097   0.000  datapath1/alu1/Madd_S_Madd_lut<0> (datapath1/alu1/Madd_S_Madd_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  datapath1/alu1/Madd_S_Madd_cy<0> (datapath1/alu1/Madd_S_Madd_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<1> (datapath1/alu1/Madd_S_Madd_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<2> (datapath1/alu1/Madd_S_Madd_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<3> (datapath1/alu1/Madd_S_Madd_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<4> (datapath1/alu1/Madd_S_Madd_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<5> (datapath1/alu1/Madd_S_Madd_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<6> (datapath1/alu1/Madd_S_Madd_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<7> (datapath1/alu1/Madd_S_Madd_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<8> (datapath1/alu1/Madd_S_Madd_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<9> (datapath1/alu1/Madd_S_Madd_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<10> (datapath1/alu1/Madd_S_Madd_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<11> (datapath1/alu1/Madd_S_Madd_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<12> (datapath1/alu1/Madd_S_Madd_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<13> (datapath1/alu1/Madd_S_Madd_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<14> (datapath1/alu1/Madd_S_Madd_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<15> (datapath1/alu1/Madd_S_Madd_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<16> (datapath1/alu1/Madd_S_Madd_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<17> (datapath1/alu1/Madd_S_Madd_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<18> (datapath1/alu1/Madd_S_Madd_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<19> (datapath1/alu1/Madd_S_Madd_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<20> (datapath1/alu1/Madd_S_Madd_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<21> (datapath1/alu1/Madd_S_Madd_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<22> (datapath1/alu1/Madd_S_Madd_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<23> (datapath1/alu1/Madd_S_Madd_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<24> (datapath1/alu1/Madd_S_Madd_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<25> (datapath1/alu1/Madd_S_Madd_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<26> (datapath1/alu1/Madd_S_Madd_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<27> (datapath1/alu1/Madd_S_Madd_cy<27>)
+     XORCY:CI->O           1   0.370   0.295  datapath1/alu1/Madd_S_Madd_xor<28> (datapath1/alu1/S<28>)
+     LUT6:I5->O            3   0.097   0.389  datapath1/alu1/Mmux_temp1211 (aluout_28_OBUF)
+     LUT5:I3->O            1   0.097   0.511  controller/pcsrc2 (controller/pcsrc1)
+     LUT6:I3->O           30   0.097   0.402  controller/pcsrc9 (pcsrc)
+     LUT4:I3->O            1   0.097   0.000  datapath1/pcnext<28>1 (datapath1/pcnext<28>)
+     FDC:D                     0.008          datapath1/pcreg/q_28
+    ----------------------------------------
+    Total                      5.754ns (2.032ns logic, 3.722ns route)
+                                       (35.3% logic, 64.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 55806 / 94
+-------------------------------------------------------------------------
+Offset:              4.536ns (Levels of Logic = 38)
+  Source:            datapath1/reg/f27/q_0 (FF)
+  Destination:       aluout<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: datapath1/reg/f27/q_0 to aluout<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.361   0.561  datapath1/reg/f27/q_0 (datapath1/reg/f27/q_0)
+     LUT6:I2->O            1   0.097   0.556  datapath1/reg/mux1/Mmux_output_81 (datapath1/reg/mux1/Mmux_output_81)
+     LUT6:I2->O            1   0.097   0.000  datapath1/reg/mux1/Mmux_output_3 (datapath1/reg/mux1/Mmux_output_3)
+     MUXF7:I1->O           2   0.279   0.384  datapath1/reg/mux1/Mmux_output_2_f7 (datapath1/out1<0>)
+     LUT6:I4->O            1   0.097   0.000  datapath1/alu1/Madd_S_Madd_lut<0> (datapath1/alu1/Madd_S_Madd_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  datapath1/alu1/Madd_S_Madd_cy<0> (datapath1/alu1/Madd_S_Madd_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<1> (datapath1/alu1/Madd_S_Madd_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<2> (datapath1/alu1/Madd_S_Madd_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<3> (datapath1/alu1/Madd_S_Madd_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<4> (datapath1/alu1/Madd_S_Madd_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<5> (datapath1/alu1/Madd_S_Madd_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<6> (datapath1/alu1/Madd_S_Madd_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<7> (datapath1/alu1/Madd_S_Madd_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<8> (datapath1/alu1/Madd_S_Madd_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<9> (datapath1/alu1/Madd_S_Madd_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<10> (datapath1/alu1/Madd_S_Madd_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<11> (datapath1/alu1/Madd_S_Madd_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<12> (datapath1/alu1/Madd_S_Madd_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<13> (datapath1/alu1/Madd_S_Madd_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<14> (datapath1/alu1/Madd_S_Madd_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<15> (datapath1/alu1/Madd_S_Madd_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<16> (datapath1/alu1/Madd_S_Madd_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<17> (datapath1/alu1/Madd_S_Madd_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<18> (datapath1/alu1/Madd_S_Madd_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<19> (datapath1/alu1/Madd_S_Madd_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<20> (datapath1/alu1/Madd_S_Madd_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<21> (datapath1/alu1/Madd_S_Madd_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<22> (datapath1/alu1/Madd_S_Madd_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<23> (datapath1/alu1/Madd_S_Madd_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<24> (datapath1/alu1/Madd_S_Madd_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<25> (datapath1/alu1/Madd_S_Madd_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<26> (datapath1/alu1/Madd_S_Madd_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<27> (datapath1/alu1/Madd_S_Madd_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<28> (datapath1/alu1/Madd_S_Madd_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<29> (datapath1/alu1/Madd_S_Madd_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<30> (datapath1/alu1/Madd_S_Madd_cy<30>)
+     XORCY:CI->O           3   0.370   0.305  datapath1/alu1/Madd_S_Madd_xor<31> (datapath1/alu1/S<31>)
+     LUT6:I5->O            3   0.097   0.289  datapath1/alu1/Mmux_temp11 (aluout_0_OBUF)
+     OBUF:I->O                 0.000          aluout_0_OBUF (aluout<0>)
+    ----------------------------------------
+    Total                      4.536ns (2.441ns logic, 2.095ns route)
+                                       (53.8% logic, 46.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 51368 / 65
+-------------------------------------------------------------------------
+Delay:               4.521ns (Levels of Logic = 38)
+  Source:            instr<26> (PAD)
+  Destination:       aluout<0> (PAD)
+
+  Data Path: instr<26> to aluout<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            43   0.001   0.665  instr_26_IBUF (instr_26_IBUF)
+     LUT4:I0->O           36   0.097   0.791  controller/maindecoder1/controls<1>21 (controller/maindecoder1/controls<1>2)
+     LUT5:I0->O           70   0.097   0.669  controller/aludecoder1/alucontrol<2>1 (alucontrol<2>)
+     LUT6:I2->O            1   0.097   0.000  datapath1/alu1/Madd_S_Madd_lut<0> (datapath1/alu1/Madd_S_Madd_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  datapath1/alu1/Madd_S_Madd_cy<0> (datapath1/alu1/Madd_S_Madd_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<1> (datapath1/alu1/Madd_S_Madd_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<2> (datapath1/alu1/Madd_S_Madd_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<3> (datapath1/alu1/Madd_S_Madd_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<4> (datapath1/alu1/Madd_S_Madd_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<5> (datapath1/alu1/Madd_S_Madd_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<6> (datapath1/alu1/Madd_S_Madd_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<7> (datapath1/alu1/Madd_S_Madd_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<8> (datapath1/alu1/Madd_S_Madd_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<9> (datapath1/alu1/Madd_S_Madd_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<10> (datapath1/alu1/Madd_S_Madd_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<11> (datapath1/alu1/Madd_S_Madd_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<12> (datapath1/alu1/Madd_S_Madd_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<13> (datapath1/alu1/Madd_S_Madd_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<14> (datapath1/alu1/Madd_S_Madd_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<15> (datapath1/alu1/Madd_S_Madd_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<16> (datapath1/alu1/Madd_S_Madd_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<17> (datapath1/alu1/Madd_S_Madd_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<18> (datapath1/alu1/Madd_S_Madd_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<19> (datapath1/alu1/Madd_S_Madd_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<20> (datapath1/alu1/Madd_S_Madd_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<21> (datapath1/alu1/Madd_S_Madd_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<22> (datapath1/alu1/Madd_S_Madd_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<23> (datapath1/alu1/Madd_S_Madd_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<24> (datapath1/alu1/Madd_S_Madd_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<25> (datapath1/alu1/Madd_S_Madd_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<26> (datapath1/alu1/Madd_S_Madd_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<27> (datapath1/alu1/Madd_S_Madd_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<28> (datapath1/alu1/Madd_S_Madd_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<29> (datapath1/alu1/Madd_S_Madd_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  datapath1/alu1/Madd_S_Madd_cy<30> (datapath1/alu1/Madd_S_Madd_cy<30>)
+     XORCY:CI->O           3   0.370   0.305  datapath1/alu1/Madd_S_Madd_xor<31> (datapath1/alu1/S<31>)
+     LUT6:I5->O            3   0.097   0.289  datapath1/alu1/Mmux_temp11 (aluout_0_OBUF)
+     OBUF:I->O                 0.000          aluout_0_OBUF (aluout<0>)
+    ----------------------------------------
+    Total                      4.521ns (1.802ns logic, 2.719ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.769|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 263.00 secs
+Total CPU time to Xst completion: 262.39 secs
+ 
+--> 
+
+Total memory usage is 4650236 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

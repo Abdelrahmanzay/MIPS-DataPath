@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+Alu instance_name (
+    .data1(data1), 
+    .data2(data2), 
+    .aluop(aluop), 
+    .dataout(dataout), 
+    .zflag(zflag)
+    );
+
+

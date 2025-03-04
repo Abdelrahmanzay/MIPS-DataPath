@@ -1,0 +1,90 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/MainmoduleTestbench_isim_beh.exe -prj C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/MainmoduleTestbench_beh.prj work.MainmoduleTestbench 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/mux_package.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/mux.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/flopr_package.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/flopr.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/decoder_package.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/decoder.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/sl2.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/Signextender_Package.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/Signextender.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/shiftleft.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/RegisterFile_Package.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/RegisterFile.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/mux2x1.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/mux2x.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/MainDecoder_Package.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/MainDecoder.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/Alu_Package.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/Aludecoder_Package.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/Aludecoder.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/Alu.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/adderpackage.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/adder.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/DataPath_Package.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/DataPath.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/Control_Package.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/Control.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/MipsModule_Package.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/MipsModule.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/Imem_Package.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/Imem.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/Dmem_Package.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/Dmem.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/MainModule.vhd" into library work
+Parsing VHDL file "C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/MainmoduleTestbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_signed
+Compiling package mipsmodule_package
+Compiling package dmem_package
+Compiling package imem_package
+Compiling package textio
+Compiling package std_logic_textio
+Compiling package std_logic_unsigned
+Compiling package control_package
+Compiling package datapath_package
+Compiling architecture behave of entity Imem [imem_default]
+Compiling architecture behave of entity Dmem [dmem_default]
+Compiling package aludecoder_package
+Compiling package maindecoder_package
+Compiling package alu_package
+Compiling package registerfile_package
+Compiling package mux2x
+Compiling package sl2
+Compiling package signextender_package
+Compiling package adderpackage
+Compiling package flopr_package
+Compiling architecture behavioral of entity Aludecoder [aludecoder_default]
+Compiling architecture behavioral of entity MainDecoder [maindecoder_default]
+Compiling architecture behavioral of entity Control [control_default]
+Compiling package mux_package
+Compiling package decoder_package
+Compiling architecture behavioral of entity decoder [decoder_default]
+Compiling architecture behavioral of entity flopr [flopr_default]
+Compiling architecture behavioral of entity mux [mux_default]
+Compiling architecture behavioral of entity RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity Alu [alu_default]
+Compiling architecture behavioral of entity adder [adder_default]
+Compiling architecture behavioral of entity Signextender [signextender_default]
+Compiling architecture behavioral of entity shiftleft [shiftleft_default]
+Compiling architecture behavioral of entity mux2x1 [\mux2x1(32)\]
+Compiling architecture behavioral of entity mux2x1 [\mux2x1(5)\]
+Compiling architecture behavioral of entity DataPath [datapath_default]
+Compiling architecture behavioral of entity MipsModule [mipsmodule_default]
+Compiling architecture behavioral of entity MainModule [mainmodule_default]
+Compiling architecture behavior of entity mainmoduletestbench
+Time Resolution for simulation is 1ps.
+Waiting for 39 sub-compilation(s) to finish...
+Compiled 61 VHDL Units
+Built simulation executable C:/Users/20102/Downloads/ProjectPhase1/ProjectPhase1/MainmoduleTestbench_isim_beh.exe
+Fuse Memory Usage: 38804 KB
+Fuse CPU Usage: 4046 ms
